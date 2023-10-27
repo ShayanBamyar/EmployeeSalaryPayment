@@ -22,4 +22,6 @@ RUN dotnet publish "SalaryPayment.API.csproj" -c Release -o /app/publish /p:UseA
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
+COPY ["SalaryPayment.API/", "."] # Add this line to copy EF Core files
+RUN dotnet ef database update --context ApplicationDbContext # Apply migrations here
 ENTRYPOINT ["dotnet", "SalaryPayment.API.dll"]

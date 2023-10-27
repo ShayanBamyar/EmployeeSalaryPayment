@@ -23,4 +23,4 @@ services:
       - DB_HOST=salarypayment-database
       - DB_NAME=SalaryPayment
       - DB_SA_PASSWORD=Password123
-
+    command: bash -c "dotnet SalaryPayment.API.dll"
