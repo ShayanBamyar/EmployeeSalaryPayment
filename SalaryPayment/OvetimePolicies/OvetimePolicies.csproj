@@ -6,9 +6,4 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\OvetimePolicies\OvetimePolicies.csproj" />
-    <ProjectReference Include="..\SalaryPayment.Repository\SalaryPayment.Repository.csproj" />
-  </ItemGroup>
-
 </Project>

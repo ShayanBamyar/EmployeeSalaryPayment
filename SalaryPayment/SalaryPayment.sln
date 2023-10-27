@@ -3,13 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34202.233
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SalaryPayment.API", "SalaryPayment.API\SalaryPayment.API.csproj", "{3E741E0D-44D0-4857-B43F-CFDDB9BCDF44}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SalaryPayment.API", "SalaryPayment.API\SalaryPayment.API.csproj", "{3E741E0D-44D0-4857-B43F-CFDDB9BCDF44}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SalaryPayment.Service", "SalaryPayment.Service\SalaryPayment.Service.csproj", "{DDD4F214-C604-444F-A8AF-841BB63199BD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SalaryPayment.Service", "SalaryPayment.Service\SalaryPayment.Service.csproj", "{DDD4F214-C604-444F-A8AF-841BB63199BD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SalaryPayment.Model", "SalaryPayment.Model\SalaryPayment.Model.csproj", "{B7CCB200-3799-4561-8A46-0D97CA1573BB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SalaryPayment.Model", "SalaryPayment.Model\SalaryPayment.Model.csproj", "{B7CCB200-3799-4561-8A46-0D97CA1573BB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SalaryPayment.Repository", "SalaryPayment.Repository\SalaryPayment.Repository.csproj", "{C4E5697D-77CB-4166-BE07-33EA53244AF4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SalaryPayment.Repository", "SalaryPayment.Repository\SalaryPayment.Repository.csproj", "{C4E5697D-77CB-4166-BE07-33EA53244AF4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OvetimePolicies", "OvetimePolicies\OvetimePolicies.csproj", "{8E8FCBF6-2F7B-4AB2-B1CD-12406ED12FC1}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{517C029A-8C31-4AD2-87BF-A045385FF1C5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +37,14 @@ Global
 		{C4E5697D-77CB-4166-BE07-33EA53244AF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C4E5697D-77CB-4166-BE07-33EA53244AF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C4E5697D-77CB-4166-BE07-33EA53244AF4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E8FCBF6-2F7B-4AB2-B1CD-12406ED12FC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E8FCBF6-2F7B-4AB2-B1CD-12406ED12FC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E8FCBF6-2F7B-4AB2-B1CD-12406ED12FC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E8FCBF6-2F7B-4AB2-B1CD-12406ED12FC1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{517C029A-8C31-4AD2-87BF-A045385FF1C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{517C029A-8C31-4AD2-87BF-A045385FF1C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{517C029A-8C31-4AD2-87BF-A045385FF1C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{517C029A-8C31-4AD2-87BF-A045385FF1C5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

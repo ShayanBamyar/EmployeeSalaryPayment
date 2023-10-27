@@ -1,0 +1,26 @@
+version: '3.4'
+
+services:
+  salarypayment-database:
+    container_name: salarypayment-database
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    ports:
+    - 8002:1433
+    environment:
+        - ACCEPT_EULA=Y
+        - SA_PASSWORD=Password123
+  salarypayment.api:
+    container_name: salarypayment.api
+    image: ${DOCKER_REGISTRY-}salarypaymentapi
+    build:
+      context: .
+      dockerfile: SalaryPayment.API/Dockerfile
+    ports:
+    - 8001:80 
+    depends_on:
+      - salarypayment-database
+    environment:
+      - DB_HOST=salarypayment-database
+      - DB_NAME=SalaryPayment
+      - DB_SA_PASSWORD=Password123
+
