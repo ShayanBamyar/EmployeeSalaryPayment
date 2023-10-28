@@ -50,7 +50,7 @@ namespace SalaryPayment.Service.FillEmployeeSalaryPaymentModel
 
 			if (entries.Length < 6 || order.Length < 6)
 			{
-				throw new ArgumentException(Errors.InvalidInputData);
+				throw new ArgumentException(Messages.InvalidInputData);
 			}
 
 			var dictionary = new Dictionary<string, string>();
@@ -77,7 +77,10 @@ namespace SalaryPayment.Service.FillEmployeeSalaryPaymentModel
 		{
 			XmlDocument xmlDoc = new XmlDocument();
 			xmlDoc.LoadXml(xmlInput);
-
+			if (xmlDoc.DocumentElement.ChildNodes.Count < 6)
+			{
+				throw new ArgumentException(Messages.InvalidInputData);
+			}
 			var model = new EmployeeSalaryPaymentModel
 			{
 				FirstName = xmlDoc.SelectSingleNode("Employee/FirstName").InnerText,
@@ -96,7 +99,7 @@ namespace SalaryPayment.Service.FillEmployeeSalaryPaymentModel
 			var entries = data.Split('/');
 			if (entries.Length < 6)
 			{
-				throw new ArgumentException(Errors.InvalidInputData);
+				throw new ArgumentException(Messages.InvalidInputData);
 			}
 
 			var model = new EmployeeSalaryPaymentModel
